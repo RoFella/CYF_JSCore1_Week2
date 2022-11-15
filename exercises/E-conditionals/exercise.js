@@ -9,6 +9,16 @@
 let name = "Daniel";
 let danielsRole = "mentor";
 
+function Greet(name, danielsRole) {
+  if (danielsRole == "mentor") {
+    return "Hi, I'm " + name + ", I'm a mentor." 
+  }
+  else if (danielsRole == "student") {
+    return "Hi, I'm " + name + ", I'm a student."
+  }
+}
+
+console.log(Greet(name, danielsRole))
 /* 
 EXPECTED RESULT
 ---------------

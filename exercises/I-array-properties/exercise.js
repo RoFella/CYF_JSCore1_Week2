@@ -6,8 +6,15 @@
 */
 
 function isEmpty(arr) {
-  return; // complete this statement
+  for (var i = 1; i <= 3; i++)
+  if (arr.includes(i)) {
+    return false;
+  }
+  else {
+    return true;
+  }
 }
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
