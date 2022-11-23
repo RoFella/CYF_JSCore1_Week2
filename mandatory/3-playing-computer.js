@@ -28,7 +28,6 @@ const f2 = function (a, b) {
 
 console.log(x);
 console.log(a);
-console.log(b);
 
 for (let i = 0; i < 5; ++i) {
   a = a + 1;
@@ -40,3 +39,14 @@ for (let i = 0; i < 5; ++i) {
     console.log(e);
   }
 }
+
+/*
+  1. Because b isn't defined
+  2. Removed, it was console.log(b)
+  3. Numbers, if to be exact, these are 2, 6, 4, 9, 6, 13, 8, where first two are console.logs before loop,
+    and other five are loops, where i comes from 0 to 4.
+  4. 2 times, because i = 1, 3
+  5. 3 times, because i = 0, 2, 4
+  6. In the first f1 i = 1 and a = 8;
+  7. If we're laking about first let a = 6, it'll stay like that, and won't be changed.
+*/
